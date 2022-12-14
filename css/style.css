@@ -4,11 +4,37 @@
     font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#grid_wrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 600px 300px 300px;
+    grid-template-areas: 
+    'hea hea'
+    "sec sec"
+    "sec2 sec2"
+    "art1 art_right" ;
+}
 header{
+    grid-area: hea;
+    height: 65px;
+    
+}
+
+#title_and_info{
+    grid-area: sec;
     background: url("../img/animals/startsida.jpg");
     height: 100vh;
     background-size: cover;
-    background-position:center;
+    background-position:center;  
+
+}
+
+#about{
+    grid-area: sec2;
+    height: 300px;
+}
+
+body{
+  
 }
 
 ul{
@@ -82,4 +108,56 @@ ul li.active a{
     color: black ; 
 }
 
+#title_and_info{
 
+}
+
+#information{
+    align-items: center;
+    justify-content: center;  
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+#art1{
+    grid-area: art1;
+    flex-direction: row;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 100px;
+    align-content: center;
+    
+}
+#mapicon{
+   background: url(../img/animals/mapicon.png)
+   background-position: center center;
+   background-size: cover;
+}
+
+#art_right{
+    width
+    grid-area: art_right;
+    color: black;
+    flex-direction: row;
+    height: 300px;
+}
+
+#map{ 
+    background-color: red;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    background: url(../img/animals/mapicon.png);
+    background-size: cover;
+    height: 500px;
+    
+    
+
+}
+
+#map_text{
+    width: 500px;
+}
