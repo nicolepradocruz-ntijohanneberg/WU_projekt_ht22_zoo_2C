@@ -11,12 +11,12 @@
     'hea hea'
     "sec sec"
     "sec2 sec2"
-    "art1 art_right" ;
+    "art1 art1"
+    "art2 art2" ;
 }
 header{
     grid-area: hea;
     height: 65px;
-    
 }
 
 #title_and_info{
@@ -34,6 +34,8 @@ header{
 }
 
 body{
+    background-color: #D4CAAB;
+
   
 }
 
@@ -113,51 +115,74 @@ ul li.active a{
 }
 
 #information{
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;  
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 150px;
+    font-size: 40px;
 }
 
 #art1{
+    background-color: white;
     grid-area: art1;
     flex-direction: row;
-    height: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     justify-items: center;
-    margin: 100px;
-    align-content: center;
+    margin: 70px;
+    align-items: center;
+    align-content: center;  
+    width: 560px;
+    padding: 5px 50px;
+    border: 2px solid rgb(18, 12, 12);
+    justify-content: center;
+    height: 160px;
+}
+
+#mapicon{
+   background: url(../img/mapicon2.jpg);
+   background-position: center;
+   background-size: cover;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#art2{
+    background-color: white;
+    grid-area: art2;
+    flex-direction: row-reverse;
+    display: flex;
+    margin: 70px;
+    align-items: center;
+    width: 560px;
+    padding: 5px 50px;
+    border: 2px solid rgb(18, 12, 12);
     
 }
-#mapicon{
-   background: url(../img/animals/mapicon.png)
-   background-position: center center;
-   background-size: cover;
-}
 
-#art_right{
-    width
-    grid-area: art_right;
-    color: black;
-    flex-direction: row;
-    height: 300px;
-}
 
-#map{ 
-    background-color: red;
     display: flex;
     align-items: center;
-    width: 500px;
-    background: url(../img/animals/mapicon.png);
     background-size: cover;
-    height: 500px;
+    background-position: center ;
     
-    
-
 }
 
 #map_text{
-    width: 500px;
+}
+
+#time{
+    background: url(../img/animals/scheduleicon3.jpg);
+   background-position: center;
+   background-size: cover;
+   align-items: flex-end;
+   align-content: flex-end;
+   justify-content: center;
+}
+
+#time_text{
+  
+
 }
