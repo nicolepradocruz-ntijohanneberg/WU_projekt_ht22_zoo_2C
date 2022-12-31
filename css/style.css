@@ -5,27 +5,39 @@
 }
 
 #grid_wrapper{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 600px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px;
     grid-template-areas: 
-    'hea hea'
-    "sec sec"
-    "sec2 sec2"
-    "art1 art1"
-    "art2 art2" ;
+    'hea hea hea hea'
+    "sec sec sec sec"
+    "sec2 sec2 sec2 sec2"
+    "art1 art1 sec3 sec3"
+    "sec4 art2 art2 art2" ;
 }
 header{
     grid-area: hea;
     height: 65px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
+#logo{
+width: 950px;
+}
+
+#search_bar{
+    width: 100px;
+    align-items: flex-end;
+    justify-content: flex-end;
+   
+}
 #title_and_info{
     grid-area: sec;
-    background: url("../img/animals/startsida.jpg");
+    background: url("../img/animals/startsida3.jpg");
     height: 100vh;
     background-size: cover;
     background-position:center;  
-
 }
 
 #about{
@@ -33,11 +45,12 @@ header{
     height: 300px;
 }
 
-body{
-    background-color: #D4CAAB;
 
-  
+body{
+    background-color: #9A8574;
+    margin: 5px;
 }
+
 
 ul{
     float: right;
@@ -110,17 +123,31 @@ ul li.active a{
     color: black ; 
 }
 
-#title_and_info{
-
-}
-
 #information{
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;  
     display: flex;
     flex-direction: row;
     height: 150px;
     font-size: 40px;
+}
+
+#row1{
+    flex-direction: row;
+    display: flex;
+    padding: 15px 50px;   
+}
+
+#row3{
+    flex-direction: row;
+    display: flex;
+    padding: 15px 50px;   
+}
+
+#row2{
+    flex-direction: row-reverse;
+    display: flex;
+    padding: 15px 50px;  
 }
 
 #art1{
@@ -130,14 +157,26 @@ ul li.active a{
     display: flex;
     justify-content: flex-end;
     justify-items: center;
-    margin: 70px;
+    margin: 10px;
     align-items: center;
     align-content: center;  
-    width: 560px;
-    padding: 5px 50px;
+    width: 460px;
+    padding: 20px 50px;
     border: 2px solid rgb(18, 12, 12);
-    justify-content: center;
     height: 160px;
+}
+
+#sec3{
+    grid-area: sec3;
+    
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-size: cover;
+    width: 460px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 #mapicon{
@@ -146,7 +185,6 @@ ul li.active a{
    background-size: cover;
    align-items: center;
    justify-content: center;
-
 }
 
 #art2{
@@ -154,12 +192,27 @@ ul li.active a{
     grid-area: art2;
     flex-direction: row-reverse;
     display: flex;
-    margin: 70px;
+    justify-content: flex-end;
+    justify-items: center;
+    margin: 10px;
     align-items: center;
-    width: 560px;
-    padding: 5px 50px;
+    align-content: center;  
+    width: 460px;
+    padding: 30px 50px;
     border: 2px solid rgb(18, 12, 12);
-    
+    height: 160px;
+}
+
+#sec4{
+    grid-area: sec3;
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -168,7 +221,7 @@ ul li.active a{
     background-size: cover;
     background-position: center ;
     
-}
+
 
 #map_text{
 }
@@ -180,9 +233,49 @@ ul li.active a{
    align-items: flex-end;
    align-content: flex-end;
    justify-content: center;
+   
 }
 
 #time_text{
   
 
+}
+
+#arrival_pic{
+    background: url(../img/animals/busicon.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid_wrapper2{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: 
+    'hea hea hea hea'
+    "sec sec sec sec"
+    "sec2 sec2 sec2 sec2"
+    "art1 art1 sec3 sec3"
+    "sec4 art2 art2 art2" ;
+}
+
+#om_oss_bild{
+    grid-area: sec;
+    background: url("../img/persons/about_us.jpg");
+    height: 150vh;
+    background-size: cover;
+    background-position: center;  
+}
+
+#color_part{
+    background-color: red;
+}
+
+#food_bild{
+    grid-area: sec;
+    background: url("../img/food.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position:center;    
 }
