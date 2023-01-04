@@ -59,7 +59,7 @@ ul{
 }
 
 ul li{
-    display:inline-block
+    display: inline-block;
 }
 
 ul li a{
@@ -268,8 +268,26 @@ ul li.active a{
     background-position: center;  
 }
 
-#color_part{
-    background-color: red;
+#restaurant_title{
+align-items: center;
+height: 130px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+align-content: flex-end;
+justify-items: flex-end;
+flex-direction: row;
+font-size: 60px;
+color: #fff;
+
+}
+
+#right_part{
+display: flex;
+width: 500px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 #food_bild{
@@ -277,5 +295,128 @@ ul li.active a{
     background: url("../img/food.jpg");
     height: 100vh;
     background-size: cover;
-    background-position:center;    
+    background-position:center;   
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+}
+
+#brödtext_food{
+color: #fff;
+font-size: small;
+width: 400px;
+align-items: center;
+justify-content: center;
+justify-items: center;
+flex-direction: row;
+}
+
+#what_we_do{
+height: 350px;
+display: flex;
+flex-direction: row;
+padding: 30px;
+background-color: #6C7C9C;
+}
+
+#what_we_do_text{
+width: 30%;
+align-content: space-evenly;
+margin: 10px;
+}
+
+#title_what_we_do{
+height: 150px;
+display: flex;
+align-items: center;
+font-size: 40px;
+}
+
+#brödtext_what_we_do{
+    align-items: flex-start;
+}
+
+#options{
+    width: 65%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+ 
+.every_option{
+    width: 33.3%;
+    height: 279px;
+}
+
+.pic_option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 80px;
+    height: 200px;
+}
+
+.text_option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+    height: 100px;
+    font-size: 15px;
+    padding: 20px;
+    
+}
+
+.titel_option{
+    font-size: 30px;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+
+}
+
+.item img{
+    transition: 0.2s ease;
+    object-fit: cover;
+    cursor: pointer;
+    width: 100%;
+    height: 300px;
+}
+
+.item img:hover{
+    transform: scale(1.04);
+}
+
+.item h2{
+    padding: 5px;
+    text-align: center;
+}
+
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #65624D;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+
+.item button:hover{
+    transform: scale(1.04);
 }
