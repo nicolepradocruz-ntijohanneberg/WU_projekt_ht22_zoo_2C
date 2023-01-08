@@ -47,7 +47,7 @@ width: 950px;
 
 
 body{
-    background-color: #9A8574;
+    background-color: #658354;
     margin: 5px;
 }
 
@@ -249,24 +249,7 @@ ul li.active a{
     justify-content: center;
 }
 
-#grid_wrapper2{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-areas: 
-    'hea hea hea hea'
-    "sec sec sec sec"
-    "sec2 sec2 sec2 sec2"
-    "art1 art1 sec3 sec3"
-    "sec4 art2 art2 art2" ;
-}
 
-#om_oss_bild{
-    grid-area: sec;
-    background: url("../img/persons/about_us.jpg");
-    height: 150vh;
-    background-size: cover;
-    background-position: center;  
-}
 
 #restaurant_title{
 align-items: center;
@@ -316,7 +299,7 @@ height: 350px;
 display: flex;
 flex-direction: row;
 padding: 30px;
-background-color: #6C7C9C;
+background-color: #75975e;
 }
 
 #what_we_do_text{
@@ -403,6 +386,13 @@ font-size: 40px;
     text-align: center;
 }
 
+#our_meny{
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+    font-size: larger;
+}
+
 .item button{
     padding: 5px 30px;
     border: none;
@@ -413,10 +403,108 @@ font-size: 40px;
     border-radius: 4px;
     font-size: 20px;
     display: block;
+ 
     margin: 0 auto;
     transition: 0.2s all;
 }
 
 .item button:hover{
     transform: scale(1.04);
+}
+
+#grid_wrapper2{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: 
+    'hea hea hea hea'
+    "sec sec sec sec"
+    "sec2 sec2 sec2 sec2"
+    "art1 art1 sec3 sec3"
+    "sec4 art2 art2 art2" ;
+}
+
+#om_oss_bild{
+    grid-area: sec;
+    background: url("../img/persons/about_us.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;  
+}
+
+#more_about_us{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.brödtext_about_us{
+    padding: 20px;
+    font-size: large;
+    height: 100px;
+}
+
+#info_bars_about_us{
+    display: flex;
+    flex-direction: row;
+}
+
+.info_bars{
+    width: 33.3%; 
+    margin: 10px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+    border: 1px solid rgb(18, 12, 12);    
+}
+
+.info_bars:hover{
+    transform: scale(1.04);
+    background-color:#6C7C9C;
+}
+ 
+.info_bars_pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.title_infobars{
+    text-decoration: none;
+    color: rgb(24, 18, 18);
+    padding: 5px 10px;
+    border: 1px solid rgb(18, 12, 12);
+    text-align: center;
+}
+
+.our_team_section{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+.our_team_bars{
+    background-color: green;
+    text-align: center;
+    border: 1px solid rgb(18, 12, 12);
+    padding: 5px 10px;
+    margin: 20px;
+
+}
+
+.pictureourteam{
+    border-radius: 30px;
+}
+
+#titel_our_team{
+    font-size: 50px;
+    width: 770px;
+    text-align: center;
 }
