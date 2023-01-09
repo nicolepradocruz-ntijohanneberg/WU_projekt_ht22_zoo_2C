@@ -115,6 +115,7 @@ ul li.active a{
     padding: 10px 60px;
     color: #fff;
     text-decoration: none;
+    width: 300px;
 
 }
 
@@ -130,6 +131,7 @@ ul li.active a{
     flex-direction: row;
     height: 150px;
     font-size: 40px;
+    color: #fff;
 }
 
 #row1{
@@ -145,7 +147,7 @@ ul li.active a{
 }
 
 #row2{
-    flex-direction: row-reverse;
+    flex-direction: row;
     display: flex;
     padding: 15px 50px;  
 }
@@ -155,7 +157,7 @@ ul li.active a{
     grid-area: art1;
     flex-direction: row;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     justify-items: center;
     margin: 10px;
     align-items: center;
@@ -163,12 +165,12 @@ ul li.active a{
     width: 460px;
     padding: 20px 50px;
     border: 2px solid rgb(18, 12, 12);
-    height: 160px;
+    height: 180px;
+    
 }
 
 #sec3{
     grid-area: sec3;
-    
     display: flex;
     flex-direction: row;
     background-position: center;
@@ -179,12 +181,13 @@ ul li.active a{
     justify-content: center;
 }
 
-#mapicon{
-   background: url(../img/mapicon2.jpg);
-   background-position: center;
-   background-size: cover;
-   align-items: center;
-   justify-content: center;
+#map{
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: center;
+    padding: 15px;
 }
 
 #art2{
@@ -215,25 +218,16 @@ ul li.active a{
     justify-content: center;
 }
 
-
-    display: flex;
-    align-items: center;
-    background-size: cover;
-    background-position: center ;
-    
-
-
 #map_text{
 }
 
 #time{
-    background: url(../img/animals/scheduleicon3.jpg);
    background-position: center;
    background-size: cover;
    align-items: flex-end;
    align-content: flex-end;
    justify-content: center;
-   
+   padding: 15px;
 }
 
 #time_text{
@@ -242,11 +236,12 @@ ul li.active a{
 }
 
 #arrival_pic{
-    background: url(../img/animals/busicon.png);
     background-position: center;
     background-size: cover;
-    align-items: center;
+    align-items: flex-end;
+    align-content: flex-end;
     justify-content: center;
+    padding: 25px;
 }
 
 
@@ -269,8 +264,9 @@ color: #fff;
 display: flex;
 width: 500px;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
+height: 500px;
 }
 
 #food_bild{
@@ -278,7 +274,6 @@ align-items: center;
     background: url("../img/food.jpg");
     height: 100vh;
     background-size: cover;
-    background-position:center;   
     display: flex;
     flex-direction: row; 
     justify-content: flex-end;
@@ -457,12 +452,14 @@ font-size: 40px;
     justify-content: center;
     justify-items: center;
     padding: 30px;
-    border: 1px solid rgb(18, 12, 12);    
+    border: 1px solid rgb(18, 12, 12);   
+    background-color: #b3cf99;
+ 
 }
 
 .info_bars:hover{
     transform: scale(1.04);
-    background-color:#6C7C9C;
+    background-color:#b3cf99;
 }
  
 .info_bars_pic{
@@ -485,26 +482,77 @@ font-size: 40px;
 .our_team_section{
     display: flex;
     flex-direction: row;
-    background-color: red;
     align-items: center;
     justify-content: center;
+    background-image: url(../img/animals/our_animalkeepers.jpg);
+    background-position: center;
 }
+
+.our_aquarists{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/animals/our_aquarists.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+   
 
 .our_team_bars{
-    background-color: green;
     text-align: center;
-    border: 1px solid rgb(18, 12, 12);
+    border-radius: 10px;
+    border: 5px solid rgb(18, 12, 12);
     padding: 5px 10px;
     margin: 20px;
-
+    background-color: #87ab69;
 }
+
+.our_team_bars:hover{
+    transform: scale(1.04);
+    background-color:#b3cf99;}
 
 .pictureourteam{
     border-radius: 30px;
 }
 
 #titel_our_team{
-    font-size: 50px;
+    font-size: 20px;
     width: 770px;
     text-align: center;
+    color: #fff;
+}
+
+.read_more{
+    padding: 10px;
+    margin: 10px;
+    background-color: #87ab69;
+}
+
+#information_background{
+    background-image: url(../img/animals/infromation_background.jpg);
+    height: 730px;
+    background-size: cover;
+    background-position:center;  
+}
+
+#our_kitchenstaff{
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../img/persons/our_kitchen_staff.jpg);
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#our_staff{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    background-color: #87ab69;
+    font-size: 50px;
+}
+
+#our_animals{
+
 }
